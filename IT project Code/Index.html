@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Medcare</title>
+        <meta charset="UTF-8">
+        <meta name="Author" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyword" content="blockchain, medcare,med,care">
+        <meta http-equiv="X_UA compactible" content="IE=edge">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="Style1.css" type="text/css">
+    </head>
+    <body>
+        <!--Login/register page-->
+        <!--Start of header-->
+        <div class="header" id="header">
+            <div class="logo" id="logo">
+                <a>Medicare.</a>
+            </div>
+            <p id="icon-menu">&#9776;</p>
+            <div class="nav">
+                <a href="#home" class="active">Home</a>
+                <a href="#start">Get Started</a>
+                <a href="#service">Services</a>
+                <a href="#footer">Contact Us</a>
+                <a class="divider"> | </a>
+                <a href="#"><button id="log">Login</button></a>
+                <a href="#" id="re"><button id="reg">Sign Up</button></a>
+            </div>
+        </div>
+
+        <section class="home" id="home">
+            <div class="home-content" id="home-content">
+                <h3 class="heading"> Blockchain Health Record System</h3>
+                <p>
+                    Blockchain's decentralized ledger architecture offers an alternative to the centralize
+                    models that dominate traditional healthcare systems. The decentralized nature of blockchain
+                    eliminates the need for a central authority, fostering a distributed network where data is
+                    stored across multiple nodes. This decentralized approach enhances the security and privacy
+                    of patient information by minimizing the risk of a single point of failure or unauthorized access.
+                    Furthermore, the immutability feature of blockchain ensures the tamper-resistant nature of records
+                    providing an indelible and transparent trail of changes. Once information is recorded on the
+                    blockchain, it becomes practically impossible to alter, ensuring the integrity and authenticity
+                    of patient medical records. This feature is crucial in a healthcare context
+                    where the accuracy of data is paramount for informed decision-making and patient care.
+                    
+                </p>
+                <button id="btns" class="btn">Register Now</button>
+            </div>
+            <div class="home-img">
+                <img src="Assets/first.jpeg" alt="">
+            </div>
+        </section>
+
+        <div class="popup" id="popup">
+            <div class="popup-content" id="popup-content">
+                <h2 class="close-btn"> X </h2>
+                <h1 id="title">Sign Up</h1>
+                <form id="form1" action="\">
+                    <div class="input-group" id="input-group">
+                        <div class="input-field" id="user-field">
+                            <i class=""></i>
+                            <input type="text" id="username" name="username" placeholder="Enter username">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-field" id="input-field">
+                            <i class=""></i>
+                            <input type="email" id="email" name="email" placeholder="Enter a valid email address">
+                            <div class="error"></div>
+                        </div>
+                        
+                        <div class="input-field" id="input-field">
+                            <i class=""></i>
+                            <input type="password" id="password" name="password" placeholder="Password">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-field" id="con-field">
+                            <i class=""></i>
+                            <input type="password" id="confirmPassword"  name= "confirm" placeholder="Confirm username">
+                            <div class="error"></div>
+                        </div>
+                        <p>
+                            Forgotten Password??<a href=""> Click here</a>
+                        </p>
+                    </div>
+                    <div class="btn-field" id="btn-field">
+                        <button type="submit"  id="signupbtn">Sign Up</button>
+                        <button type="submit" id="signinbtn" class="disabled">Sign In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <!--Getting started Section-->
+        <section class="start" id="start">
+            <h2 class="heading">Getting started is quick and easy</h2>
+            <div class="start-container" id="start-container">
+                <div class="start-box" id="start-box">
+                    <h2>Register yourself</h2>
+                    <img src="Assets/register.jpeg" alt="">
+                    <p>
+                        Register yourself to the locker, secured by blockchain technology.
+                    </p>
+                </div>
+
+                <div class="start-box" id="start-box">
+                    <h2>Authenticate yourself</h2>
+                    <img src="Assets/r-verify.png" alt="">
+                    <p>
+                        LogIn with your creditials.
+                    </p>
+                </div>
+
+                <div class="start-box" id="start-box">
+                    <h2>Upload your Data</h2>
+                    <img src="Assets/r-upload1.jpeg" alt="">
+                    <p>
+                        Create, update, transer of view your health record information.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Start of service section-->
+        <section class="service" id="service">
+            <h2 class="heading">Services we deliver</h2>
+                <div class="service-container" id="service-container">
+                    <div class="service-box" id="service-box">
+                        <h2>Maintaining Medical Record</h2>
+                        <img src="Assets/maintain.jpeg" alt="">
+                        <p>
+                            Keep track of your medical records,enabled  by blockchain technology
+                        </p>
+                    </div>
+    
+                    <div class="service-box" id="service-box">
+                        <h2>Connect with Doctors</h2>
+                        <img src="Assets/m-connect.png" alt="">
+                        <p>
+                            Share your records with our trusted medical experts to get prescription.
+                        </p>
+                    </div>
+    
+                    <div class="service-box" id="service-box">
+                        <h2>Disease Prediction Model</h2>
+                        <img src="Assets/m-predict.jpeg" alt="">
+                        <p>
+                            Get a quick diagnosis about diseases you might suffer from, based on our  ML model.
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <!--Start of footer section-->
+        <div class="footer" id="footer">
+            <div class="footer-content" id="footer-content">
+                <div class="footer-box" id="intro">
+                    <h2>medi<span>care</span></h2>
+                    <p>
+                    Introducing Medicare, a decentralized blockchain system revolutionizing the
+                    transfer of medical files. Built at the nexus of healthcare and blockchain technology,
+                    Medicare offers a secure, transparent, and immutable platform for managing sensitive patient information.
+                    </p>
+                    <div class="place" id="place">
+                        <span><i class='bx bxs-phone'> &nbsp; +254 793685078</i></span>
+                        <span><i class='bx bxl-gmail'>&nbsp; medicare@support.ac.ke</i></span>
+                        <span><i class='bx bx-current-location'> Moi Avenue Opposite</i></span>
+                    </div>
+                    <div class="media-icons" id="med-icons">
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-youtube'></i>
+                    </div>
+                </div>
+
+                <div class="footer-box" id="quick-box">
+                    <h2 id="dark">QuickLinks</h2>
+                    <ul>
+                        <li>Events</li>
+                        <li>Contact</li>
+                        <li>Mentors</li>
+                        <li>Blog</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+
+                <div class="footer-box" id="footer-box">
+                    <h2 id="dark">Contact Us</h2>
+                    <form action="https://formsubmit.co/brayanmaluki@gmail.com" method="POST">
+                        <input type="text" name="_honey" style="display:none;">
+                        <input type="hidden" name="_Capture" value="false">
+                        <input type="text" placeholder="Your email address" required>
+                        <input type="text" maxlength="1000" placeholder="Message">
+                        <button  type="submit">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottom-footer" id="bottom-footer">
+            <div class="licence" id="licence">
+                <p>
+                    Copyrights &#169; 2024 Brayan Maluki | All Rights Reserved &#174;
+                </p>
+            </div>
+        </div>
+        <script type="text/javascript" src="App.js"></script>
+        <script defer src="index.js"></script>
+    </body>
+</html>

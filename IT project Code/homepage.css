@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+*{
+    font-family: 'poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --grey:#F1F0F6;
+    --darkgrey:#8D8D8D;
+    --light:#fff;
+    --dark:#000;
+    --bottomcolor:#2f2e2e;
+    --green:#81D43A;
+    --blue:#1775F1;
+    --light-blue:#D0E4FF;
+    --dark-blue:#0C5FCD;
+    --red:#fC3b56;
+    --yellow:#b88e11;
+    --light-dark:#003;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--grey);
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+
+/*Start of side-bar*/
+.side-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:250px;
+    padding-left: 30px 15px;
+    backdrop-filter:blur(20px);
+    background-color: var(--light);
+    scrollbar-width:none;
+    transition:all .3s ease;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: width 0.5s;
+}
+.sidebar::-webkit-scrollbar{
+    display:none;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    font-size: 12px;
+    padding:10px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+/*.user div{
+    display: none;
+}*/
+.side-bar .user-img{
+    width:40px;
+    border-radius: 50%;
+    margin:6px;
+}
+.user h2{
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.side-bar #user-icon{
+    width:20px;
+    color:var(--green);
+    font-weight: 650;
+    /*display: none;*/
+}
+
+.side-bar ul{
+    padding:0 15px;
+}
+.side-bar ul li{
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    height:30px;
+    border-radius:5px;
+}
+.side-bar ul li i{
+    width:45px;
+    margin-right: 0px;
+    margin-left:5px;
+}
+.side-bar ul li:hover{
+    background-color: var(--bottomcolor);
+    color:var(--grey);
+}
+.side-bar ul li  p{
+    white-space: nowrap;
+   /* display:none;*/
+}
+/*.side-bar:hover{
+    width:250px;
+}
+.side-bar:hover .user div{
+    display: block;
+}
+.side-bar:hover .user {
+    width:100%;
+    background-color: var(--light-blue);
+    backdrop-filter: blur(10px);
+}
+.side-bar:hover #user-icon{
+    display: block;
+}
+.side-bar:hover .user-img{
+    margin:0;
+}
+.side-bar:hover  ul li p{
+    display: block;
+}
+.side-bar:hover  ul li i{
+    margin-right: 10px;
+}
+.side-bar:hover  ul li {
+    justify-content: flex-start;
+}*/
+
+/*  Start of content */
+#content{
+    position:relative;
+    width:calc(100% - 260px);
+    left:260px;
+    transition:all .3s ease-out;
+}
+#content.active{
+    width:calc(100% - 60px);
+    left:60px;
+}
+
+/*Navbar*/
+nav{
+    background-color: var(--light);
+    height:64px;
+    padding:0 20px;
+    display:flex;
+    align-items: center;
+    grid-gap: 30px;
+    position:sticky;
+    top:0;
+    left:0;
+    width: 100%;
+}
+nav.active{
+    left:0;
+}
+nav form{
+    max-width: 400px;
+    width: 100%;
+    margin-right:auto;
+}
+nav .form-group{
+    position:relative;
+}
+#toggle-sidebar{
+    font-size:19px;
+    cursor:pointer;
+    font-weight:900;
+}
+nav .form-group input{
+    width:100%;
+    background:var(--grey);
+    border-radius: 5px;
+    border:none;
+    transition: all .3s ease-in;
+    outline:none;
+    padding:10px 36px 10px 16px;
+}
+nav .form-group input:focus{
+    box-shadow: 0 0 0 1px var(--green), 0 0 0 4px var(--light-dark);
+}
+nav .form-group .icon{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right:15px;
+    color:var(--darkgrey);
+}
+nav .nav-link{
+    position:relative;
+}
+nav .nav-link .icon{
+    font-size: 19px;
+    color:var(--dark);
+}
+nav .nav-link .badge{
+    position:absolute;
+    top:-12px;
+    right:-12px;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    border:2px solid var(--light);
+    background: var(--red);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--light);
+    font-size:10px;
+    font-weight:700;
+}
+nav .divider{
+    width: 1px;
+    background:var(--grey);
+    height:12px;
+    display: block;
+}
+nav .connect{
+    position:relative;
+}
+nav .connect button{
+    background-color: var(--blue);
+    color:var(--light);
+    border-radius: 5px;
+    height:40px;
+    cursor:pointer;
+}
+/*Navbar*/
